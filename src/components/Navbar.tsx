@@ -7,10 +7,10 @@ export const Navbar = () => {
 
   return (
     <header className="sticky top-0 bg-white/95 backdrop-blur-sm shadow-lg z-50 border-b border-gray-100">
-      <div className="container mx-auto px-6 py-5 flex items-center justify-between">
+      <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-20 py-5 flex items-center justify-between">
         <Link to="/" className="flex items-center group">
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-[#FF6600] to-[#e55c00] rounded-lg flex items-center justify-center shadow-md group-hover:shadow-lg transition-all duration-200">
+            <div className="w-10 h-10 bg-gradient-to-br from-[#FF6600] to-[#e55c00] rounded-full flex items-center justify-center shadow-md group-hover:shadow-lg transition-all duration-200">
               <img 
               src="/WhatsApp_Image_2025-09-20_at_22.07.49_2384894a-removebg-preview.png" 
               alt="PrimeDesk Logo" 
@@ -18,7 +18,7 @@ export const Navbar = () => {
               />
             </div>
             <span className="text-[#1A1A1A] font-bold text-2xl tracking-tight">
-              Prime<span className="text-[#FF6600]">Desk Solutions BPO</span>
+              Prime<span className="text-[#FF6600]">Desk Solutions</span>
             </span>
           </div>
         </Link>
@@ -73,7 +73,7 @@ export const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur-sm py-6 px-6 shadow-xl border-t border-gray-100">
+        <div className="md:hidden bg-white/95 backdrop-blur-sm py-6 px-8 md:px-12 shadow-xl border-t border-gray-100">
           <nav className="flex flex-col space-y-6">
             <Link 
               to="/services" 

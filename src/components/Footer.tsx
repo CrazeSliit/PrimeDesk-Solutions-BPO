@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin } from 'lucide-react';
 export const Footer = () => {
   return <footer className="bg-[#1A1A1A] text-white pt-12 pb-6">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">
@@ -94,7 +94,7 @@ export const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Phone size={16} className="mr-2 text-[#FF6600]" />
-                <span className="text-gray-300">+234 789 548 635</span>
+                <span className="text-gray-300">+234 912 789 5971</span>
               </li>
               <li className="flex items-center">
                 <MapPin size={16} className="mr-2 text-[#FF6600]" />

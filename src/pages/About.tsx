@@ -7,18 +7,18 @@ export const About = () => {
       <Navbar />
       {/* Hero Section */}
       <section className="bg-gray-50 py-16 md:py-24">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-20">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               We're More Than a Service. We're Your Growth Partner.
             </h1>
-            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Prime Desk Solutions Team" className="w-full h-80 object-cover rounded-lg mt-8" />
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Prime Desk Solutions professional BPO team collaborating" className="w-full h-80 object-cover rounded-lg mt-8" />
           </div>
         </div>
       </section>
       {/* Our Mission Section */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
@@ -49,7 +49,7 @@ export const About = () => {
       
       {/* Core Values */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-20">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             Our Core Values
           </h2>
@@ -76,7 +76,7 @@ export const About = () => {
       </section>
       {/* Join Our Team */}
       <section className="bg-gray-50 py-12">
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-20 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-6">
             Want to Join Our Mission?
           </h2>

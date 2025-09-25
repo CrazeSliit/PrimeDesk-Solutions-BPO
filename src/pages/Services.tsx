@@ -25,7 +25,7 @@ export const Services = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
-              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Virtual Assistance" className="rounded-lg shadow-md w-full h-80 object-cover" />
+              <img src="https://images.unsplash.com/photo-1555421689-3f034debb7a6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Professional virtual assistant with headset managing tasks" className="rounded-lg shadow-md w-full h-80 object-cover" />
             </div>
             <div className="md:w-1/2">
               <h2 className="text-3xl font-bold mb-4">Virtual Assistance</h2>
@@ -52,7 +52,7 @@ export const Services = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row-reverse items-center gap-12">
             <div className="md:w-1/2">
-              <img src="https://images.unsplash.com/photo-1521119989659-a83eee488004?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80" alt="Call Support" className="rounded-lg shadow-md w-full h-80 object-cover" />
+              <img src="https://plus.unsplash.com/premium_photo-1661629388008-452d528d9932?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Call center agents providing customer support with headsets" className="rounded-lg shadow-md w-full h-80 object-cover" />
             </div>
             <div className="md:w-1/2">
               <h2 className="text-3xl font-bold mb-4">Call Support</h2>
@@ -62,7 +62,7 @@ export const Services = () => {
                 the highest level of professionalism and care.
               </p>
               <ul className="space-y-3 mb-6">
-                {['Inbound Customer Service', 'Appointment Scheduling', 'Order Processing', 'Product Information', 'After-Hours Support'].map((item, index) => <li key={index} className="flex items-start">
+                {['Inbound And Outbound Customer Service', 'Appointment Scheduling', 'Order Processing', 'Product Information', 'After-Hours Support'].map((item, index) => <li key={index} className="flex items-start">
                     <CheckCircle size={20} className="text-[#FF6600] mr-2 mt-1 flex-shrink-0" />
                     <span>{item}</span>
                   </li>)}
@@ -79,13 +79,13 @@ export const Services = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
-              <img src="https://images.unsplash.com/photo-1596524430615-b46475ddff6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Chat Support" className="rounded-lg shadow-md w-full h-80 object-cover" />
+              <img src="https://images.unsplash.com/photo-1709715357479-591f9971fb05?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Customer service representative providing live chat support" className="rounded-lg shadow-md w-full h-80 object-cover" />
             </div>
             <div className="md:w-1/2">
-              <h2 className="text-3xl font-bold mb-4">Chat Support</h2>
+              <h2 className="text-3xl font-bold mb-4">Chat and Email  Support</h2>
               <p className="text-[#6c757d] mb-6">
                 Provide instant assistance to your website visitors with our
-                24/7 live chat support. Convert more visitors into customers and
+                24/7 live chat and Email support. Convert more visitors into customers and
                 improve satisfaction with prompt, helpful responses.
               </p>
               <ul className="space-y-3 mb-6">
@@ -106,7 +106,7 @@ export const Services = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row-reverse items-center gap-12">
             <div className="md:w-1/2">
-              <img src="https://images.unsplash.com/photo-1664575599736-c5197c684128?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Administrative Support" className="rounded-lg shadow-md w-full h-80 object-cover" />
+              <img src="https://images.unsplash.com/photo-1675270548942-b03f0672e708?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Administrative professional managing data and office tasks" className="rounded-lg shadow-md w-full h-80 object-cover" />
             </div>
             <div className="md:w-1/2">
               <h2 className="text-3xl font-bold mb-4">
@@ -132,7 +132,7 @@ export const Services = () => {
       </section>
       {/* Not Sure Section */}
       <section className="bg-[#FF6600] py-16">
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-20 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             Let's Find the Perfect Solution for You
           </h2>

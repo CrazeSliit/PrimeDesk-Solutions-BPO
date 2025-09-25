@@ -25,7 +25,7 @@ export const Contact = () => {
   return <div className="min-h-screen flex flex-col">
       <Navbar />
       <div className="flex-grow py-16">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Left Column: Booking */}
             <div>
@@ -86,7 +86,7 @@ export const Contact = () => {
                 </div>
                 <div className="flex items-center">
                   <Phone size={20} className="text-[#FF6600] mr-3" />
-                  <span>+234 789 548 635</span>
+                  <span>+234 912 789 5971</span>
                 </div>
               </div>
               {/* Mini FAQ */}

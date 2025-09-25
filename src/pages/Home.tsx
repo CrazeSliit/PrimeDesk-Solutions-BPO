@@ -9,8 +9,9 @@ export const Home = () => {
   return <div className="min-h-screen flex flex-col">
       <Navbar />
       {/* Hero Section */}
+            {/* Hero Section */}
       <section className="bg-white py-16 md:py-24">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-20">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
               Focus on Your Vision. We'll Handle the Rest.
@@ -37,7 +38,7 @@ export const Home = () => {
       
       {/* Services Overview */}
       <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-20">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             Solutions Designed to Scale With You
           </h2>
@@ -51,7 +52,7 @@ export const Home = () => {
       </section>
       {/* Key Differentiator Section */}
       <section className="bg-gray-50 py-16 md:py-24">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-20">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             The Right Fit, Guaranteed.
           </h2>
@@ -109,7 +110,7 @@ export const Home = () => {
       </section>
       {/* Testimonials */}
       <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-20">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             "We Assist Your Growth"
           </h2>
@@ -118,7 +119,7 @@ export const Home = () => {
       </section>
       {/* Final CTA */}
       <section className="bg-[#FF6600] py-16">
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-20 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Ready to Reclaim Your Time?
           </h2>

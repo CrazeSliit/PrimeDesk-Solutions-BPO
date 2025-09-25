@@ -87,9 +87,9 @@ export const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center">
                 <Mail size={16} className="mr-2 text-[#FF6600]" />
-                <span className="text-gray-300">
-                  Contactus@primedesksolutions.com
-                </span>
+                <a href="mailto:contactus@primedesksolutionsbpo.com" className="text-gray-300 hover:text-[#FF6600] transition-colors">
+                  contactus@primedesksolutionsbpo.com
+                </a>
               </li>
               <li className="flex items-center">
                 <Phone size={16} className="mr-2 text-[#FF6600]" />

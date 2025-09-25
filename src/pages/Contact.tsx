@@ -32,8 +32,11 @@ export const Contact = () => {
     e.preventDefault();
     
     try {
+      // Use environment variable for API URL, fallback to localhost for development
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+      
       // Send email via backend API
-      const response = await fetch('http://localhost:5000/api/send-email', {
+      const response = await fetch(`${apiUrl}/api/send-email`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

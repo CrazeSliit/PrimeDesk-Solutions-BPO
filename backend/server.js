@@ -12,7 +12,8 @@ app.use(cors({
   origin: [
     'http://localhost:5173',
     'http://localhost:3000',
-    'https://your-website.com' // Add your production domain here
+    'https://primedesk.netlify.app', // Your production Netlify domain
+    'https://primedesk-solutions-bpo.netlify.app' // Alternative domain if needed
   ],
   credentials: true
 }));

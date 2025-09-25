@@ -1,4 +1,3 @@
-import React from 'react';
 import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 import { Button } from '../components/Button';
@@ -9,7 +8,6 @@ export const Home = () => {
   return <div className="min-h-screen flex flex-col">
       <Navbar />
       {/* Hero Section */}
-            {/* Hero Section */}
       <section className="bg-white py-16 md:py-24">
         <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-20">
           <div className="max-w-3xl mx-auto text-center">
@@ -112,7 +110,7 @@ export const Home = () => {
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-20">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            "We Assist Your Growth"
+            What Our Clients Say
           </h2>
           <TestimonialSlider />
         </div>

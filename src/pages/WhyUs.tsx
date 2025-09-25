@@ -1,4 +1,3 @@
-import React from 'react';
 import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 import { Button } from '../components/Button';
@@ -23,7 +22,7 @@ export const WhyUs = () => {
       </section>
       {/* Trial Advantage Section */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-20">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             Find Your Perfect Match. Risk-Free.
           </h2>
@@ -111,23 +110,12 @@ export const WhyUs = () => {
             </div>
           ))}
         </div>
-        
-        {/* Bottom CTA */}
-        <div className="text-center mt-12">
-          <div className="bg-white rounded-xl p-8 shadow-lg border-2 border-[#FF6600] border-opacity-20">
-            <h3 className="text-2xl font-bold mb-4 text-[#1A1A1A]">Ready to Get Started?</h3>
-            <p className="text-[#6c757d] mb-6">Experience our proven integration process firsthand with a free consultation.</p>
-            <Button href="/contact" variant="primary" className="px-8 py-3">
-          Schedule Your Free Consultation
-            </Button>
-          </div>
-        </div>
           </div>
         </div>
       </section>
       {/* Key Benefits */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-20">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             Why Businesses Choose Us
           </h2>

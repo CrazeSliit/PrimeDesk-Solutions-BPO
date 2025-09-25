@@ -1,4 +1,3 @@
-import React from 'react';
 import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 import { Button } from '../components/Button';
@@ -8,7 +7,7 @@ export const Services = () => {
       <Navbar />
       {/* Hero Section */}
       <section className="bg-gray-50 py-16 md:py-24">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-20">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Tailored Support for Every Business Need
@@ -22,7 +21,7 @@ export const Services = () => {
       </section>
       {/* Virtual Assistance Service */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-20">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
               <img src="https://images.unsplash.com/photo-1555421689-3f034debb7a6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Professional virtual assistant with headset managing tasks" className="rounded-lg shadow-md w-full h-80 object-cover" />
@@ -49,7 +48,7 @@ export const Services = () => {
       </section>
       {/* Call Support Service */}
       <section className="bg-gray-50 py-16">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-20">
           <div className="flex flex-col md:flex-row-reverse items-center gap-12">
             <div className="md:w-1/2">
               <img src="https://plus.unsplash.com/premium_photo-1661629388008-452d528d9932?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Call center agents providing customer support with headsets" className="rounded-lg shadow-md w-full h-80 object-cover" />
@@ -76,7 +75,7 @@ export const Services = () => {
       </section>
       {/* Chat Support Service */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-20">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
               <img src="https://images.unsplash.com/photo-1709715357479-591f9971fb05?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Customer service representative providing live chat support" className="rounded-lg shadow-md w-full h-80 object-cover" />
@@ -103,7 +102,7 @@ export const Services = () => {
       </section>
       {/* Administrative Support Service */}
       <section className="bg-gray-50 py-16">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-20">
           <div className="flex flex-col md:flex-row-reverse items-center gap-12">
             <div className="md:w-1/2">
               <img src="https://images.unsplash.com/photo-1675270548942-b03f0672e708?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Administrative professional managing data and office tasks" className="rounded-lg shadow-md w-full h-80 object-cover" />

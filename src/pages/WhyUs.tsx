@@ -1,9 +1,38 @@
 import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 import { Button } from '../components/Button';
+import { SEOHead } from '../components/SEOHead';
 import { CheckCircle, Users, Calendar } from 'lucide-react';
+
 export const WhyUs = () => {
-  return <div className="min-h-screen flex flex-col">
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Why Choose PrimeDesk Solutions BPO",
+    "description": "Discover why PrimeDesk Solutions BPO is the safest way to scale your support team with our unique 7-day trial process and transparent methodology.",
+    "url": "https://primedesk.netlify.app/why-us",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "PrimeDesk Solutions BPO",
+      "description": "The Safest Way to Scale Your Support Team",
+      "uniqueSellingProposition": [
+        "7-day risk-free trial with pre-vetted professionals",
+        "Transparent vetting process with quality assurance",
+        "Perfect agent matching system",
+        "No upfront commitments or hidden fees"
+      ]
+    }
+  };
+
+  return (
+    <div className="min-h-screen flex flex-col">
+      <SEOHead
+        title="Why Choose Us - Risk-Free 7-Day Trial | PrimeDesk Solutions BPO"
+        description="Discover why PrimeDesk Solutions BPO is the safest way to scale your support team. Get pre-vetted professionals with our unique 7-day risk-free trial process."
+        keywords="why choose primedesk solutions, 7-day free trial, risk-free BPO, pre-vetted virtual assistants, transparent process, quality assurance"
+        url="https://primedesk.netlify.app/why-us"
+        structuredData={structuredData}
+      />
       <Navbar />
       {/* Hero Section */}
       <section className="bg-gray-50 py-16 md:py-24">
@@ -160,5 +189,6 @@ export const WhyUs = () => {
         </div>
       </section>
       <Footer />
-    </div>;
+    </div>
+  );
 };

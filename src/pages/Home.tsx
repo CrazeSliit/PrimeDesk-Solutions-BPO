@@ -3,9 +3,71 @@ import { Footer } from '../components/Footer';
 import { Button } from '../components/Button';
 import { ServiceCard } from '../components/ServiceCard';
 import { TestimonialSlider } from '../components/TestimonialSlider';
+import { SEOHead } from '../components/SEOHead';
 import { CheckCircle, Calendar, Users, MessageSquare, Headphones } from 'lucide-react';
+
 export const Home = () => {
-  return <div className="min-h-screen flex flex-col">
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "PrimeDesk Solutions BPO - Virtual Assistant Services",
+    "description": "Expert virtual assistance, call, and chat support services. Get a 7-day free trial with our dedicated professionals.",
+    "url": "https://primedesk.netlify.app/",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "PrimeDesk Solutions BPO",
+      "url": "https://primedesk.netlify.app/",
+      "description": "We Assist Your Growth - Focus on Your Vision. We'll Handle the Rest.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "BPO Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Virtual Assistance",
+              "description": "Dedicated professionals handling your administrative tasks, emails, and scheduling."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Call Support",
+              "description": "Friendly, trained agents to handle incoming and outgoing calls for your business."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Chat Support",
+              "description": "24/7 live chat agents to engage with customers and provide instant assistance."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Administrative Support",
+              "description": "Comprehensive back-office support including data entry and research."
+            }
+          }
+        ]
+      }
+    }
+  };
+
+  return (
+    <div className="min-h-screen flex flex-col">
+      <SEOHead
+        title="PrimeDesk Solutions BPO - Virtual Assistant, Call & Chat Support Services"
+        description="Expert virtual assistance, call, and chat support services. Get a 7-day free trial with our dedicated professionals. Focus on your vision while we handle the rest."
+        keywords="virtual assistant, call support, chat support, BPO services, administrative support, customer service, outsourcing, business process outsourcing, 7-day free trial"
+        url="https://primedesk.netlify.app/"
+        structuredData={structuredData}
+      />
       <Navbar />
       {/* Hero Section */}
       <section className="bg-white py-16 md:py-24">
@@ -127,5 +189,6 @@ export const Home = () => {
         </div>
       </section>
       <Footer />
-    </div>;
+    </div>
+  );
 };

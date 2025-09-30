@@ -1,9 +1,76 @@
 import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 import { Button } from '../components/Button';
+import { SEOHead } from '../components/SEOHead';
 import { CheckCircle } from 'lucide-react';
+
 export const Services = () => {
-  return <div className="min-h-screen flex flex-col">
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "PrimeDesk Solutions BPO Services",
+    "description": "Comprehensive BPO services including virtual assistance, call support, chat support, and administrative services.",
+    "url": "https://primedesk.netlify.app/services",
+    "provider": {
+      "@type": "Organization",
+      "name": "PrimeDesk Solutions BPO"
+    },
+    "serviceType": [
+      "Virtual Assistance",
+      "Call Support",
+      "Chat Support",
+      "Administrative Support"
+    ],
+    "areaServed": "Worldwide",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "BPO Services Catalog",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Virtual Assistance",
+            "description": "Administrative tasks, email management, calendar scheduling, and executive support."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Call Support",
+            "description": "Inbound and outbound customer service, appointment scheduling, and order processing."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Chat Support",
+            "description": "24/7 live chat coverage, customer issue resolution, and lead qualification."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Administrative Support",
+            "description": "Data entry, research and analysis, report generation, and project coordination."
+          }
+        }
+      ]
+    }
+  };
+
+  return (
+    <div className="min-h-screen flex flex-col">
+      <SEOHead
+        title="Our Services - Virtual Assistant, Call & Chat Support | PrimeDesk Solutions BPO"
+        description="Comprehensive BPO services including virtual assistance, call support, 24/7 chat support, and administrative services. Tailored solutions for every business need."
+        keywords="virtual assistant services, call support services, chat support, administrative support, BPO services, customer service outsourcing, data entry services"
+        url="https://primedesk.netlify.app/services"
+        structuredData={structuredData}
+      />
       <Navbar />
       {/* Hero Section */}
       <section className="bg-gray-50 py-16 md:py-24">
@@ -24,7 +91,7 @@ export const Services = () => {
         <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-20">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
-              <img src="https://images.unsplash.com/photo-1555421689-3f034debb7a6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Professional virtual assistant with headset managing tasks" className="rounded-lg shadow-md w-full h-80 object-cover" />
+              <img src="https://images.unsplash.com/photo-1555421689-3f034debb7a6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Professional virtual assistant working remotely with headset and computer, managing administrative tasks and client communications" className="rounded-lg shadow-md w-full h-80 object-cover" />
             </div>
             <div className="md:w-1/2">
               <h2 className="text-3xl font-bold mb-4">Virtual Assistance</h2>
@@ -51,7 +118,7 @@ export const Services = () => {
         <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-20">
           <div className="flex flex-col md:flex-row-reverse items-center gap-12">
             <div className="md:w-1/2">
-              <img src="https://plus.unsplash.com/premium_photo-1661629388008-452d528d9932?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Call center agents providing customer support with headsets" className="rounded-lg shadow-md w-full h-80 object-cover" />
+              <img src="https://plus.unsplash.com/premium_photo-1661629388008-452d528d9932?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Friendly call center agents providing professional customer support services with modern headsets and phone systems" className="rounded-lg shadow-md w-full h-80 object-cover" />
             </div>
             <div className="md:w-1/2">
               <h2 className="text-3xl font-bold mb-4">Call Support</h2>
@@ -78,7 +145,7 @@ export const Services = () => {
         <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-20">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
-              <img src="https://images.unsplash.com/photo-1709715357479-591f9971fb05?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Customer service representative providing live chat support" className="rounded-lg shadow-md w-full h-80 object-cover" />
+              <img src="https://images.unsplash.com/photo-1709715357479-591f9971fb05?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Customer service representative providing live chat support and email assistance to help customers resolve issues quickly" className="rounded-lg shadow-md w-full h-80 object-cover" />
             </div>
             <div className="md:w-1/2">
               <h2 className="text-3xl font-bold mb-4">Chat and Email  Support</h2>
@@ -105,7 +172,7 @@ export const Services = () => {
         <div className="container mx-auto px-8 md:px-12 lg:px-16 xl:px-20">
           <div className="flex flex-col md:flex-row-reverse items-center gap-12">
             <div className="md:w-1/2">
-              <img src="https://images.unsplash.com/photo-1675270548942-b03f0672e708?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Administrative professional managing data and office tasks" className="rounded-lg shadow-md w-full h-80 object-cover" />
+              <img src="https://images.unsplash.com/photo-1675270548942-b03f0672e708?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Administrative professional managing data entry, research, and document preparation tasks in organized office setting" className="rounded-lg shadow-md w-full h-80 object-cover" />
             </div>
             <div className="md:w-1/2">
               <h2 className="text-3xl font-bold mb-4">
@@ -146,5 +213,6 @@ export const Services = () => {
         </div>
       </section>
       <Footer />
-    </div>;
+    </div>
+  );
 };

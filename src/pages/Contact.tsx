@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 import { Button } from '../components/Button';
+import { SEOHead } from '../components/SEOHead';
 import { Mail, Phone, ChevronDown } from 'lucide-react';
+
 export const Contact = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [showNotification, setShowNotification] = useState(false);
@@ -11,6 +13,24 @@ export const Contact = () => {
     email: '',
     message: ''
   });
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact PrimeDesk Solutions BPO",
+    "description": "Get in touch with PrimeDesk Solutions BPO for virtual assistant, call support, and administrative services. Start your 7-day free trial today.",
+    "url": "https://primedesk.netlify.app/contact",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "PrimeDesk Solutions BPO",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "email": "contactus@primedesksolutionsbpo.com",
+        "availableLanguage": "en"
+      }
+    }
+  };
 
   const toggleFaq = (index: number) => {
     if (openFaq === index) {
@@ -89,7 +109,15 @@ export const Contact = () => {
     question: 'How quickly can you start working with us?',
     answer: 'After a successful trial and onboarding, we can typically have your agent fully operational within 3-5 business days, depending on the complexity of your requirements.'
   }];
-  return <div className="min-h-screen flex flex-col">
+  return (
+    <div className="min-h-screen flex flex-col">
+      <SEOHead
+        title="Contact Us - Get Your Free 7-Day Trial | PrimeDesk Solutions BPO"
+        description="Contact PrimeDesk Solutions BPO for virtual assistant, call support, and administrative services. Schedule your free discovery call and start your 7-day trial today."
+        keywords="contact primedesk solutions, free trial, virtual assistant consultation, BPO contact, schedule discovery call, customer support contact"
+        url="https://primedesk.netlify.app/contact"
+        structuredData={structuredData}
+      />
       <Navbar />
       
       {/* Success Notification */}
@@ -236,5 +264,6 @@ export const Contact = () => {
         </div>
       </div>
       <Footer />
-    </div>;
+    </div>
+  );
 };

@@ -1,8 +1,38 @@
 import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 import { Button } from '../components/Button';
+import { SEOHead } from '../components/SEOHead';
+
 export const About = () => {
-  return <div className="min-h-screen flex flex-col">
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About PrimeDesk Solutions BPO",
+    "description": "Learn about PrimeDesk Solutions BPO - your growth partner in virtual assistance, call support, and administrative services.",
+    "url": "https://primedesk.netlify.app/about",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "PrimeDesk Solutions BPO",
+      "description": "We're More Than a Service. We're Your Growth Partner.",
+      "foundingDate": "2020",
+      "mission": "To empower businesses to focus on growth and innovation by providing exceptional administrative and customer support services.",
+      "coreValues": [
+        "Quality - We are committed to excellence in everything we do",
+        "Partnership - We view ourselves as an extension of your team",
+        "Proactivity - We anticipate needs and stay one step ahead"
+      ]
+    }
+  };
+
+  return (
+    <div className="min-h-screen flex flex-col">
+      <SEOHead
+        title="About Us - PrimeDesk Solutions BPO | Virtual Assistant Company"
+        description="Learn about PrimeDesk Solutions BPO - your growth partner in virtual assistance, call support, and administrative services. Discover our mission, values, and commitment to your success."
+        keywords="about primedesk solutions, BPO company, virtual assistant company, business process outsourcing, company mission, core values"
+        url="https://primedesk.netlify.app/about"
+        structuredData={structuredData}
+      />
       <Navbar />
       {/* Hero Section */}
       <section className="bg-gray-50 py-16 md:py-24">
@@ -11,7 +41,7 @@ export const About = () => {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               We're More Than a Service. We're Your Growth Partner.
             </h1>
-            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Prime Desk Solutions professional BPO team collaborating" className="w-full h-80 object-cover rounded-lg mt-8" />
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Prime Desk Solutions professional BPO team collaborating in modern office environment" className="w-full h-80 object-cover rounded-lg mt-8" />
           </div>
         </div>
       </section>
@@ -85,5 +115,6 @@ export const About = () => {
         </div>
       </section>
       <Footer />
-    </div>;
+    </div>
+  );
 };
